@@ -1,5 +1,141 @@
-h1{
-    color: blue; font-size: 100;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(to bottom, #025ef2, #00e01a);
+  color: #fff; font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  background: linear-gradient(to bottom right, #05a9f0, #33d507);
 
 }
-.h1:hover{ color: chartreuse;}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?coding,developer') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 4em;
+  background-image: ;
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.skills,
+.projects,
+.contact {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill,
+.project,
+.contact-info {
+  background: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex-basis: 30%;
+  transition: transform 0.3s;
+}
+
+.skill:hover,
+.project:hover,
+.contact-info:hover {
+  transform: scale(1.05);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+  .skill,
+  .project,
+  .contact-info {
+    flex-basis: 100%;
+  }
+
+  .hero h2 {
+    font-size: 2.5em;
+  }
+}
